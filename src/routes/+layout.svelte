@@ -1,7 +1,14 @@
 <script>
-  import Navigation from '$lib/Navigation/Navigation.svelte';
+  import { Body, Faq, Footer, Hero, Navigation, Pricing } from '$lib';
   import '../app.css';
 </script>
 
-<Navigation />
-<slot />
+<div>
+  <Navigation />
+  <Hero />
+  <Body />
+  <Pricing />
+  <Faq />
+  <Footer />
+</div>
+<!-- <slot /> -->
