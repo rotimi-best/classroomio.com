@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-12 md:px-12 px-5 sticky top-0 z-[3000] filter backdrop-blur-md bg-opacity-80 shadow-sm"
+  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-12 md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-md bg-opacity-80 shadow-sm"
 >
   <div class="flex items-center">
     <img

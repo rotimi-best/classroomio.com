@@ -50,7 +50,7 @@
     <img
       src="/body-2.png"
       alt=""
-      class=" w-[48rem] lg:h-full max-w-none ml-[-110%] md:ml-[-108%] mt-[15%] lg:mt-0 lg:w-[73%] lg:ml-[-23.5%] border-[1px] rounded-[30px] shadow-xl"
+      class=" w-[40rem] lg:h-full max-w-none mt-[15%] lg:mt-0 lg:w-[73%] ml-[-80%] md:ml-[-108%] lg:ml-[-23.5%] border-[1px] rounded-[30px] shadow-xl"
     />
     <div class="sm:w-full lg:w-2/4 px-7 lg:pl-[7%] lg:pr-36 mt-10">
       <h2 class="inter text-[#1D4EE2] text-xl font-semibold leading-10">
