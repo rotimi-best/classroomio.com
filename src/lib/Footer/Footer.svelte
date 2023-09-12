@@ -43,7 +43,7 @@
     </div>
 
     <nav
-      class="flex justify-between flex-col lg:flex-row w-full lg:w-2/4 pr-[5%] mt-16 lg:mt-0 space-y-6"
+      class="flex justify-between items-start flex-col lg:flex-row w-full lg:w-2/4 pr-[5%] mt-16 lg:mt-0 space-y-6 lg:space-y-0"
     >
       <div>
         <h3

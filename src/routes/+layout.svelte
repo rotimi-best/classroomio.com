@@ -3,7 +3,7 @@
   import '../app.css';
 </script>
 
-<div>
+<div class="overflow-hidden">
   <Navigation />
   <Hero />
   <Body />
