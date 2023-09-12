@@ -20,10 +20,10 @@
   </header>
 
   <div
-    class="flex flex-wrap items-center lg:items-start flex-row gap-10 lg:gap-20 px-[3%] mt-[20%] lg:m-0"
+    class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 px-[3%] mt-[20%] lg:m-0"
   >
     {#each faqs as faq}
-      <div class="max-w-[100%] lg:max-w-[29%] px-4 lg:p-0">
+      <div class="max-w-[100%] px-4 lg:p-0">
         <h1
           class="text:md lg:text-xl font-semibold leading-8 text-gray-800 inter"
         >
