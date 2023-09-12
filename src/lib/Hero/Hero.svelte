@@ -32,7 +32,7 @@
     >Create a free account</button
   >
 
-  <div class="relative mt-[40%] lg:m-0">
+  <div class="relative mt-[15%] md:mt-[10%] lg:m-0">
     <img
       src="/statistics.png"
       alt=""
