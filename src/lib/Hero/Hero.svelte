@@ -1,4 +1,9 @@
-<div class="text-center mt-[40%] md:mt-[12%] lg:mt-[18%] border-b-2">
+<div class="text-center mt-[30%] md:mt-[12%] lg:mt-[18%] border-b-2 relative">
+  <img
+    src="/notion.svg"
+    alt=""
+    class="sm:w-[30%] md:w-[15%] lg:w-[20%] mx-auto mt-[-10%] mb-10 floating"
+  />
   <h1
     class="mx-auto text-2xl md:text-4xl lg:text-8xl font-normal leading-[1.2] text-slate-900"
   >
@@ -16,11 +21,6 @@
     for <br /> Notion resources
   </h1>
 
-  <img
-    src="/notion.svg"
-    alt=""
-    class="sm:w-[30%] md:w-[30%] lg:w-[20%] absolute top-[15%] right-[33%] lg:right-[40%] floating"
-  />
   <p
     class="inter mx-auto mt-10 lg:mt-6 px-4 lg:p-0 text-md md:text-xl lg:text-2xl tracking-wide leading-6 lg:leading-10 text-slate-700"
   >
