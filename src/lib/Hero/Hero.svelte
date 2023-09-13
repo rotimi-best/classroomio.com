@@ -2,10 +2,10 @@
   <img
     src="/notion.svg"
     alt=""
-    class="sm:w-[30%] md:w-[15%] lg:w-[20%] mx-auto mt-[-10%] mb-10 floating"
+    class="sm:w-[30%] md:w-[15%] lg:w-[13%] mx-auto mt-[-10%] mb-10 floating"
   />
   <h1
-    class="mx-auto text-2xl md:text-4xl lg:text-8xl font-normal leading-[1.2] text-slate-900"
+    class="mx-auto text-2xl md:text-4xl lg:text-7xl font-normal leading-[1.2] text-slate-900"
   >
     Advanced <span class="text-[#1D4EE2] relative"
       >analytics <svg
@@ -36,14 +36,14 @@
     <img
       src="/statistics.png"
       alt=""
-      class="w-[85%] lg:w-[95%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
+      class="w-[85%] lg:w-[77%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
     />
     <div
       class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"
     />
   </div>
 
-  <div class="px-[5%] mb-[10%]">
+  <div class="px-[12%] mb-[10%]">
     <h2 class="inter text-base lg:text-xl font-semibold text-gray-900">
       Used at
     </h2>
