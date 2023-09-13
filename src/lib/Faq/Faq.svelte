@@ -2,7 +2,7 @@
   import { faqs } from '../../constants';
 </script>
 
-<div class="mt-[20%] mb-[15%]">
+<div class="mt-[20%] mb-[15%] px-[10%]">
   <header class="text-center mb-[8%]">
     <h1
       class="mt-2 text-4xl lg:text-5xl font-medium tracking-tight text-gray-900"
@@ -25,12 +25,12 @@
     {#each faqs as faq}
       <div class="max-w-[100%] px-4 lg:p-0">
         <h1
-          class="text:md lg:text-xl font-semibold leading-8 text-gray-800 inter"
+          class="text:md lg:text-md font-semibold leading-8 text-gray-800 inter"
         >
           {faq.question}
         </h1>
         <p
-          class="mt-2 text:md lg:text-xl font-thin leading-7 lg:leading-9 text-gray-600 inter tracking-wide"
+          class="mt-2 text:md lg:text-md font-thin leading-7 lg:leading-9 text-gray-600 inter tracking-wide"
         >
           {faq.answer}
         </p>

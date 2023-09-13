@@ -29,7 +29,7 @@
 </script>
 
 <div
-  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-12 md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-md bg-opacity-80 shadow-sm"
+  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-[10%] md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-md bg-opacity-80 shadow-sm"
 >
   <div class="flex items-center">
     <img
@@ -38,16 +38,16 @@
       class="w-[15%] md:w-[20%] lg:w-[20%]"
     />
     <h1
-      class="text-xs md:text-xl lg:text-xl font-semibold ml-2 lg:ml-5 md:ml-5"
+      class="text-xs md:text-xl lg:text-base font-medium ml-2 lg:ml-5 md:ml-5"
     >
       Notionlytics
     </h1>
   </div>
 
-  <nav class="w-[25%] hidden md:hidden lg:block">
+  <nav class="w-[30%] hidden md:hidden lg:block">
     <ul class="flex items-center justify-between w-full">
       <!--  -->
-      <li class="text-gray-800 font-semibold text-base cursor-pointer">
+      <li class="text-gray-800 font-semibold text-sm cursor-pointer">
         <button use:melt={$trigger} class="flex items-center"
           >Why Notionlytics? <ChevronDown class="ml-2" /></button
         >
@@ -61,10 +61,10 @@
           >
             <ChartPie size={32} />
             <div class="w-[86%]">
-              <h3 class="font-semibold text-base text-gray-700">
+              <h3 class="font-semibold text-sm text-gray-700">
                 Advanced content analytics
               </h3>
-              <p class="font-normal text-base text-gray-600">
+              <p class="font-normal text-sm text-gray-600">
                 Understand what's helpful and what isn't
               </p>
             </div>
@@ -75,10 +75,10 @@
           >
             <Cursor_2 size={32} />
             <div class="w-[86%]">
-              <h3 class="font-semibold text-base text-gray-700">
+              <h3 class="font-semibold text-sm text-gray-700">
                 Interactice Widgets
               </h3>
-              <p class="font-normal text-base text-gray-600">
+              <p class="font-normal text-sm text-gray-600">
                 Recieve direct feedback about your content
               </p>
             </div>
@@ -87,10 +87,10 @@
         </div>
       </li>
       <!--  -->
-      <li class="text-gray-800 font-semibold text-base cursor-pointer">
+      <li class="text-gray-800 font-semibold text-sm cursor-pointer">
         Use cases
       </li>
-      <li class="text-gray-800 font-semibold text-base cursor-pointer">
+      <li class="text-gray-800 font-semibold text-sm cursor-pointer">
         Pricing
       </li>
     </ul>
@@ -98,10 +98,10 @@
 
   <div class="justify-between items-center flex-row hidden md:hidden lg:flex">
     <button
-      class="bg-[#1D4EE2] text-white font-semibold px-5 py-3 rounded-md mr-10"
+      class="bg-[#1D4EE2] text-white text-sm font-medium px-5 py-2 rounded-md mr-10"
       >Sign Up</button
     >
-    <button class="font-semibold after:content-['→'] after:ml-2"
+    <button class="font-medium text-sm after:content-['→'] after:ml-2"
       >Dashboard</button
     >
   </div>
