@@ -36,14 +36,14 @@
     <img
       src="/statistics.png"
       alt=""
-      class="w-[85%] lg:w-[77%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
+      class="w-[85%] lg:w-[70%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
     />
     <div
       class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"
     />
   </div>
 
-  <div class="px-[12%] mb-[10%]">
+  <div class="px-[15%] mb-[10%]">
     <h2 class="inter text-base lg:text-xl font-semibold text-gray-900">
       Used at
     </h2>

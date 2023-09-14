@@ -1,4 +1,4 @@
-<div class="mt-[15%] mx-[8%]">
+<div class="mt-[15%] mx-0 lg:mx-[12%]">
   <!-- body section 1 -->
   <div class="w-full flex flex-col lg:flex-row relative">
     <div class="sm:w-full lg:w-2/4 px-7 lg:pl-10 lg:pr-30 mt-10">
@@ -17,21 +17,21 @@
         relevant.
       </h3>
       <p
-        class="mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
+        class="mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
         <b class="text-gray-800 font-bold"> Comprehensive analytics.</b> See what
         works and what doesn't, spot trends, and adjust content accordingly. Bird's
         eye view from one intuitive dashboard.
       </p>
       <p
-        class="realTime mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
+        class="realTime mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
         <b class="text-gray-800 font-bold"> Real-time updates.</b> No delays, no
         waiting. Just data, as it comes in. With real-time analytics, you can see
         what's happening as it happens.
       </p>
       <p
-        class="continuousImprovement mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
+        class="continuousImprovement mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
         <b class="text-gray-800 font-bold"> Continuous improvement.</b> You're not
         just tracking usage. Notionlytics offers best-in-class analytics for a reason:
@@ -41,59 +41,67 @@
     <img
       src="/body-1.png"
       alt=""
-      class="h-[500px] w-[48rem] lg:h-full max-w-none ml-[10%] mt-[15%] lg:mt-0 lg:w-[65%] lg:mr-[-15.5%] border-[1px] rounded-[30px] shadow-xl"
+      class="h-[500px] w-[48rem] lg:h-full max-w-none ml-[7%] mt-[15%] lg:mt-0 lg:w-[65%] lg:mr-[-15.5%] border-[1px] rounded-[30px] shadow-xl"
     />
   </div>
 
   <!-- body section 2 -->
-  <div class="w-full flex flex-col-reverse lg:flex-row relative mt-[15%]">
-    <img
-      src="/body-2.png"
-      alt=""
-      class="w-[48rem] md:w-[48rem] lg:w-[70%] lg:h-full max-w-none mt-[15%] lg:mt-0 ml-[-29rem] lg:ml-[-23.5%] border-[1px] rounded-[30px] shadow-xl"
-    />
-    <div class="sm:w-full lg:w-2/4 px-7 lg:pl-[7%] lg:pr-32 mt-10">
-      <h2 class="inter text-[#1D4EE2] text-md font-semibold leading-10">
-        Direct feedback
-      </h2>
-      <h1
-        class="mt-2 lg:text-4xl font-semibold font-display tracking-tighter text-gray-900 sm:text-4xl"
+  <div
+    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 my-[15%] lg:flex-row-reverse"
+  >
+    <div class="flex items-center justify-end order-2 lg:order-first">
+      <img
+        src="/body-2.png"
+        alt=""
+        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] mr-10 lg:mr-0"
+      />
+    </div>
+    <div class="sm:w-full lg:w-[80%] px-7 lg:pl-[7%] mt-10">
+      <div class="max-w-3xl text-left mr-auto">
+        <h2 class="inter text-[#1D4EE2] text-base font-semibold leading-10">
+          Direct feedback
+        </h2>
+        <h1
+          class="mt-2 text-3xl font-bold font-display tracking-tight text-gray-900 lg:text-4xl"
+        >
+          Interactive widgets
+        </h1>
+        <h3 class="mt-4 text-lg inter text-gray-500">
+          Let your audience tell you what's useless, and what's actually
+          helpful. Anonymously.
+        </h3>
+      </div>
+      <div
+        class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
       >
-        Interactive widgets
-      </h1>
-      <h3
-        class="mt-5 mb-10 text-md lg:text-xl text-gray-500 inter sm:leading-5 lg:leading-8"
-      >
-        Let your audience tell you what's useless, and what's actually helpful.
-        Anonymously.
-      </h3>
-      <p
-        class="feedback mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal leading-7 lg:leading-7"
-      >
-        <b class="text-gray-800 font-bold"> Live feedback.</b> Learn directly from
-        those who read what you write. Notionlytics widgets are designed to collect
-        feedback and show it to you in real-time.
-      </p>
-      <p
-        class="audience mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal leading-7 lg:leading-7"
-      >
-        <b class="text-gray-800 font-bold"> Audience-centered design.</b> It's a
-        win-win. Let others influence and shape the content in a way that makes it
-        more valable for them.
-      </p>
-      <p
-        class="seamless mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-10 inter tracking-normal leading-7 lg:leading-7"
-      >
-        <b class="text-gray-800 font-bold"> Seamless integration.</b> Effortless
-        feedback collection, without disrupting the audience experience. It takes
-        seconds to install Notionlytics widgets into Notion content.
-      </p>
+        <p
+          class="feedback mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
+        >
+          <b class="text-gray-800 font-bold"> Live feedback.</b> Learn directly from
+          those who read what you write. Notionlytics widgets are designed to collect
+          feedback and show it to you in real-time.
+        </p>
+        <p
+          class="audience mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
+        >
+          <b class="text-gray-800 font-bold"> Audience-centered design.</b> It's
+          a win-win. Let others influence and shape the content in a way that makes
+          it more valable for them.
+        </p>
+        <p
+          class="seamless mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
+        >
+          <b class="text-gray-800 font-bold"> Seamless integration.</b> Effortless
+          feedback collection, without disrupting the audience experience. It takes
+          seconds to install Notionlytics widgets into Notion content.
+        </p>
+      </div>
     </div>
   </div>
 
   <!-- body section 3 -->
   <div
-    class="w-full flex flex-col items-start lg:flex-row relative my-[5%] pt-[13%] mt-[20%] lg:mt-[13%] border-t-[1px]"
+    class="w-full flex flex-col items-start lg:flex-row relative my-[5%] pt-[13%] mt-[8rem] lg:mt-[13%] border-t-[1px]"
   >
     <div class="sm:w-full lg:w-2/4 px-7 lg:pl-10 lg:pr-[10%]">
       <h1
@@ -145,31 +153,31 @@
 
   <!-- body section 5 -->
   <div
-    class="flex justify-between flex-row flex-wrap lg:flex-nowrap items-center text-center px-[10%] py-[7%] border-b-[1px] gap-y-10"
+    class="flex justify-between flex-row flex-wrap lg:flex-nowrap items-center text-center px-[10%] py-[7%] border-b-[1px] gap-y-20 gap-x-20"
   >
     <div class="w-full">
       <h2
-        class="w-full order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+        class="w-full order-first text-3xl font-semibold inter tracking-tight text-gray-900 sm:text-5xl"
       >
         1 thousand
       </h2>
-      <p class="text-base leading-7 text-gray-600">Feedback collected</p>
+      <p class="text-base leading-7 text-gray-600 inter">Feedback collected</p>
     </div>
     <div class="w-full">
       <h2
-        class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+        class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl inter"
       >
         5 thousand
       </h2>
-      <p class="text-base leading-7 text-gray-600">Documents processed</p>
+      <p class="text-base leading-7 text-gray-600 inter">Documents processed</p>
     </div>
     <div class="w-full">
       <h2
-        class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+        class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl inter"
       >
         1 million
       </h2>
-      <p class="text-base leading-7 text-gray-600">Page views recorded</p>
+      <p class="text-base leading-7 text-gray-600 inter">Page views recorded</p>
     </div>
   </div>
 </div>
@@ -226,8 +234,8 @@
     .feedback::after,
     .audience::after,
     .seamless::after {
-      width: 8%;
-      top: 3%;
+      width: 6%;
+      top: 3.5%;
     }
   }
 </style>
