@@ -29,13 +29,13 @@
 </script>
 
 <div
-  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-[10%] md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-md bg-opacity-80 shadow-sm"
+  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-[14%] md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-xl shadow-sm"
 >
   <div class="flex items-center">
     <img
       src="/logo-32.png"
       alt="classroomio logo"
-      class="w-[15%] md:w-[20%] lg:w-[20%]"
+      class="w-[19%] md:w-[20%] lg:w-[20%]"
     />
     <h1
       class="text-xs md:text-xl lg:text-base font-medium ml-2 lg:ml-5 md:ml-5"
@@ -44,7 +44,7 @@
     </h1>
   </div>
 
-  <nav class="w-[30%] hidden md:hidden lg:block">
+  <nav class="w-[29%] hidden md:hidden lg:block ml-16">
     <ul class="flex items-center justify-between w-full">
       <!--  -->
       <li class="text-gray-800 font-semibold text-sm cursor-pointer">
@@ -53,11 +53,11 @@
         >
         <div
           use:melt={$menu}
-          class="w-[28%] border px-5 py-5 rounded-[30px] shadow-slate-700 mt-10 ml-[-30px] bg-white"
+          class="w-[28%] border px-5 py-5 rounded-[30px] shadow-slate-700 mt-2 z-[3001] ml-[-30px] bg-white"
         >
           <div
             use:melt={$item}
-            class="flex justify-between items-center w-full rounded-lg hover:fill-blue-300 hover:bg-slate-100 p-5 mb-4"
+            class="flex justify-between items-center w-full rounded-lg hover:bg-slate-100 p-5 mb-4"
           >
             <ChartPie size={32} />
             <div class="w-[86%]">
@@ -98,7 +98,7 @@
 
   <div class="justify-between items-center flex-row hidden md:hidden lg:flex">
     <button
-      class="bg-[#1D4EE2] text-white text-sm font-medium px-5 py-2 rounded-md mr-10"
+      class="bg-[#1D4EE2] text-white text-sm font-medium px-4 py-1.5 rounded-md mr-5"
       >Sign Up</button
     >
     <button class="font-medium text-sm after:content-['→'] after:ml-2"

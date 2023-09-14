@@ -4,9 +4,9 @@
   import LogoLinkedin from 'carbon-icons-svelte/lib/LogoLinkedin.svelte';
 </script>
 
-<div class="px-[10%]">
+<div class="px-[2%] lg:px-[14%] border-t-[1px]">
   <div
-    class="flex flex-col lg:flex-row justify-between items-center py-[10%] border-t-2 pl-5 lg:pl-0"
+    class="flex flex-col lg:flex-row justify-between items-center py-[10%] pl-5 lg:pl-0"
   >
     <div class="w-full lg:w-2/4">
       <img
