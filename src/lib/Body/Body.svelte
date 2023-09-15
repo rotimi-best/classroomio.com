@@ -1,3 +1,12 @@
+<script>
+  import Timer from 'carbon-icons-svelte/lib/Timer.svelte';
+  import IbmSecureInfrastructureOnVpcForRegulatedIndustries from 'carbon-icons-svelte/lib/IbmSecureInfrastructureOnVpcForRegulatedIndustries.svelte';
+  import Analytics from 'carbon-icons-svelte/lib/Analytics.svelte';
+  import Chat from 'carbon-icons-svelte/lib/Chat.svelte';
+  import TwoPersonLift from 'carbon-icons-svelte/lib/TwoPersonLift.svelte';
+  import WatsonHealth3rdPartyConnected from 'carbon-icons-svelte/lib/WatsonHealth3rdPartyConnected.svelte';
+</script>
+
 <div class="mt-[15%] mx-0 lg:mx-[12%]">
   <!-- body section 1 -->
   <div class="w-full flex flex-col lg:flex-row relative">
@@ -17,8 +26,9 @@
         relevant.
       </h3>
       <p
-        class="mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
+        class="mt-4 text-md lg:text-md text-gray-500 font-light pl-9 present relative inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
+        <Analytics size={20} class="absolute left-0 top-1 fill-[#1D4EE2]" />
         <b class="text-gray-800 font-bold"> Comprehensive analytics.</b> See what
         works and what doesn't, spot trends, and adjust content accordingly. Bird's
         eye view from one intuitive dashboard.
@@ -26,6 +36,7 @@
       <p
         class="realTime mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
+        <Timer size={24} class="absolute left-0 top-0.5 fill-[#1D4EE2]" />
         <b class="text-gray-800 font-bold"> Real-time updates.</b> No delays, no
         waiting. Just data, as it comes in. With real-time analytics, you can see
         what's happening as it happens.
@@ -33,6 +44,10 @@
       <p
         class="continuousImprovement mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-9 inter tracking-normal lg:tracking-normal leading-7 lg:leading-7"
       >
+        <IbmSecureInfrastructureOnVpcForRegulatedIndustries
+          size={20}
+          class="absolute left-0 top-1 fill-[#1D4EE2]"
+        />
         <b class="text-gray-800 font-bold"> Continuous improvement.</b> You're not
         just tracking usage. Notionlytics offers best-in-class analytics for a reason:
         to keep your Notion documents helpful, on an ongoing basis.
@@ -77,6 +92,7 @@
         <p
           class="feedback mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
         >
+          <Chat size={20} class="absolute left-0 top-0.5 fill-[#1D4EE2]" />
           <b class="text-gray-800 font-bold"> Live feedback.</b> Learn directly from
           those who read what you write. Notionlytics widgets are designed to collect
           feedback and show it to you in real-time.
@@ -84,6 +100,10 @@
         <p
           class="audience mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
         >
+          <TwoPersonLift
+            size={20}
+            class="absolute left-0 top-0.5 fill-[#1D4EE2]"
+          />
           <b class="text-gray-800 font-bold"> Audience-centered design.</b> It's
           a win-win. Let others influence and shape the content in a way that makes
           it more valable for them.
@@ -91,6 +111,10 @@
         <p
           class="seamless mt-4 text-md lg:text-md text-gray-500 font-light present relative pl-8 inter tracking-normal leading-7 lg:leading-7"
         >
+          <WatsonHealth3rdPartyConnected
+            size={20}
+            class="absolute left-0 top-0.5 fill-[#1D4EE2]"
+          />
           <b class="text-gray-800 font-bold"> Seamless integration.</b> Effortless
           feedback collection, without disrupting the audience experience. It takes
           seconds to install Notionlytics widgets into Notion content.
@@ -181,61 +205,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  .present::after {
-    content: url(/presentation.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-  .realTime::after {
-    content: url(/realTime.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-  .continuousImprovement::after {
-    content: url(/continuousImprovement.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-
-  .feedback::after {
-    content: url(/liveFeedback.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-  .audience::after {
-    content: url(/audience.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-  .seamless::after {
-    content: url(/seamless.svg);
-    position: absolute;
-    left: 0;
-    top: 5%;
-    width: 4%;
-  }
-
-  @media (max-width: 760px) {
-    .present::after,
-    .realTime::after,
-    .continuousImprovement::after,
-    .feedback::after,
-    .audience::after,
-    .seamless::after {
-      width: 6%;
-      top: 3.5%;
-    }
-  }
-</style>
