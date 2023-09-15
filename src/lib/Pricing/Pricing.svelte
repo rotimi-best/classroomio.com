@@ -175,7 +175,7 @@
   </div>
 
   <div
-    class="flex flex-col lg:flex-row items-start lg:items-center mx-auto lg:mx-10 mt-[5%] border-[1px] rounded-[30px] py-[10%] lg:py-[5%] px-[10px] lg:px-[30px]"
+    class="flex flex-col lg:flex-row items-start lg:items-center mx-auto lg:mx-10 mt-[5%] border-[1px] rounded-[30px] py-[10%] lg:py-[5%] px-[10px] lg:px-[30px] lg:w-full md:max-w-[550px] lg:max-w-full"
   >
     <div class="mr-5 pl-5">
       <h2
@@ -189,7 +189,7 @@
       </p>
     </div>
     <button
-      class="font-semibold text-base lg:text-md text-white leading-5 mt-5 lg:m-0 py-4 lg:py-5 ml-5 lg:mr-3 bg-[#1D4EE2] rounded-lg lg:rounded-xl inter w-[70%] lg:w-[29%]"
+      class="font-semibold text-base lg:text-md text-white leading-5 mt-5 lg:m-0 p-4 lg:py-5 ml-5 bg-[#1D4EE2] rounded-lg lg:rounded-xl inter w-[70%] lg:w-full"
       >Create a free account</button
     >
   </div>
