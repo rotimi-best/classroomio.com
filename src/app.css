@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Lexend', sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  font-family: 'Inter', sans-serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
