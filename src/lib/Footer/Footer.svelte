@@ -1,7 +1,7 @@
 <script>
   import LogoTwitter from 'carbon-icons-svelte/lib/LogoTwitter.svelte';
   import LogoYoutube from 'carbon-icons-svelte/lib/LogoYoutube.svelte';
-  import LogoLinkedin from 'carbon-icons-svelte/lib/LogoLinkedin.svelte';
+  import LogoFacebook from 'carbon-icons-svelte/lib/LogoFacebook.svelte';
 </script>
 
 <div class="px-[2%] lg:px-[14%] border-t-[1px]">
@@ -17,29 +17,30 @@
       <p
         class="text-sm lg:text-md tracking-wide leading-7 lg:leading-7 text-gray-600 inter"
       >
-        Advanced analytics for Notion resources.
+        The LMS with Superpowers
         <br />
-        Not affiiliated with Notion Labs, Inc.
+        Making teaching and learning seamless
       </p>
       <div class="flex mt-5 lg:mt-10 gap-3 lg:gap-7">
-        <LogoLinkedin
-          class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
-          size={20}
-        />
-        <LogoTwitter
-          class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
-          size={20}
-        />
-        <LogoYoutube
-          class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
-          size={20}
-        />
+        <a href="https://www.facebook.com/classroomiohq" target="_blank">
+          <LogoFacebook
+            class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
+            size={20}
+          />
+        </a>
+        <a href="https://twitter.com/classroomio" target="_blank">
+          <LogoTwitter
+            class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
+            size={20}
+          />
+        </a>
+        <a href="https://www.youtube.com/@ClassroomIO" target="_blank">
+          <LogoYoutube
+            class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
+            size={20}
+          />
+        </a>
       </div>
-      <img
-        src="/notion.svg"
-        alt="notion icon"
-        class="w-[38%] lg:w-[19%] mt-6 lg:mt-10"
-      />
     </div>
 
     <nav
@@ -55,12 +56,22 @@
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Advanced content analytics
+            <a href="#coursemanagement"> Course Management </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Interactive widgets
+            <a href="#customization"> Customizations </a>
+          </li>
+          <li
+            class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
+          >
+            <a href="#collaboration"> Forum </a>
+          </li>
+          <li
+            class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
+          >
+            <a href="#ai"> AI Lesson Planner </a>
           </li>
         </ul>
       </div>
@@ -75,22 +86,36 @@
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Help center
+            <a target="_blank" href="https://classroomio.substack.com/">
+              Blog
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            What is Notionlytics?
+            <a target="_blank" href="https://help.classroomio.com/">
+              Help center
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Set up Notionlytics
+            <a
+              target="_blank"
+              href="https://help.classroomio.com/what-is-classroomio"
+            >
+              What is ClassroomIO?
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Reports and metrics
+            <a
+              target="_blank"
+              href="https://help.classroomio.com/getting-started"
+            >
+              Getting Started
+            </a>
           </li>
         </ul>
       </div>
@@ -105,22 +130,39 @@
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Contact us
+            <a href="mailto:help@classroomio.com" target="_blank">
+              Contact us
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Privacy policy
+            <a
+              href="https://app.enzuzo.com/policies/privacy/958fc978-5477-11ee-a03b-7b111830c594"
+              target="_blank"
+            >
+              Privacy policy
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Set up Notionlytics
+            <a
+              target="_blank"
+              href="https://help.classroomio.com/getting-started"
+            >
+              Getting Started
+            </a>
           </li>
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            Terms of use
+            <a
+              href="https://app.enzuzo.com/policies/tos/958fc978-5477-11ee-a03b-7b111830c594"
+              target="_blank"
+            >
+              Terms of use
+            </a>
           </li>
         </ul>
       </div>
@@ -129,6 +171,6 @@
   <footer
     class="border-t-[1px] py-[3%] text-xs lg:text-md leading-5 font-light text-gray-500 text-center lg:text-left"
   >
-    © 2023 Notionlytics. All rights reserved.
+    © {new Date().getFullYear()} ClassroomIO. All rights reserved.
   </footer>
 </div>

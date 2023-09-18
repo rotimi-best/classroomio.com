@@ -1,14 +1,15 @@
-<div class="text-center mt-[30%] md:mt-[12%] lg:mt-[18%] border-b-2 relative">
-  <img
-    src="/notion.svg"
-    alt=""
-    class="sm:w-[30%] md:w-[15%] lg:w-[13%] mx-auto mt-[-10%] mb-10 floating"
-  />
+<script>
+  import ImageCompare from './ImageCompare.svelte';
+  import { PUBLIC_ENABLE_USERS_COMPANIES } from '$env/static/public';
+</script>
+
+<div class="text-center mt-[30%] md:mt-36 border-b-2 relative">
   <h1
-    class="mx-auto text-2xl md:text-4xl lg:text-7xl font-normal leading-[1.2] text-slate-900"
+    class="mx-auto text-3xl md:text-4xl lg:text-7xl font-normal leading-[1.2] text-slate-900"
   >
-    Advanced <span class="text-[#1D4EE2] relative"
-      >analytics <svg
+    The LMS with <br />
+    <span class="text-[#1D4EE2] relative"
+      >Superpowers <svg
         aria-hidden="true"
         viewBox="0 0 418 42"
         class="absolute left-0 top-2/3 h-[0.58em] fill-indigo-300/70"
@@ -18,74 +19,56 @@
         /></svg
       ></span
     >
-    for <br /> Notion resources
   </h1>
 
   <p
-    class="inter mx-auto mt-10 lg:mt-6 px-4 lg:p-0 text-md md:text-xl lg:text-2xl tracking-wide leading-6 lg:leading-10 text-slate-700"
+    class="inter mx-auto mt-10 lg:mt-6 px-4 lg:p-0 text-md md:text-xl lg:text-2xl tracking-wide leading-6 lg:leading-10 text-slate-700 md:w-2/4"
   >
-    Find out what's helpful, and what isn't. <br /> For company wikis, community
-    knowledge bases, and shared documents.
+    ClassroomIO is your all-in-one place<br /> for teaching & learning.We empowers
+    educators build, automate and enrich learning experiences in and outside the
+    classroom.
   </p>
-  <button
-    class="font-medium lg:font-semibold text-sm md:text-md lg:text-xl text-white px-6 py-3 lg:px-10 lg:py-5 bg-[#1D4EE2] rounded-md lg:rounded-xl mt-10"
-    >Create a free account</button
-  >
-
-  <div class="relative mt-[15%] md:mt-[10%] lg:m-0">
-    <img
-      src="/statistics.png"
-      alt=""
-      class="w-[85%] lg:w-[70%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
-    />
-    <div
-      class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]"
-    />
-  </div>
-
-  <div class="px-[15%] mb-[10%]">
-    <h2 class="inter text-base lg:text-xl font-semibold text-gray-900">
-      Used at
-    </h2>
-    <div
-      class="w-full flex flex-wrap flex-row gap-5 justify-between items-center py-[5%]"
+  <a href="https://cal.com/digdippa/30min" target="_blank">
+    <button
+      class="font-medium lg:font-semibold text-sm md:text-md lg:text-xl text-white px-6 py-3 lg:px-10 lg:py-5 bg-[#1D4EE2] rounded-md lg:rounded-xl mt-10"
     >
-      <img src="/hero-1.svg" alt="" class="w-[30%] lg:w-[13%]" />
-      <img src="/hero-2.svg" alt="" class="w-[30%] lg:w-[13%]" />
-      <img src="/hero-3.svg" alt="" class="w-[30%] lg:w-[13%]" />
-      <img src="/hero-4.svg" alt="" class="w-[30%] lg:w-[13%]" />
-      <img src="/hero-5.svg" alt="" class="w-[30%] lg:w-[13%]" />
-    </div>
+      <!-- Create a free account -->
+      Book a Demo
+    </button>
+  </a>
+
+  <div class="relative my-10 md:my-20">
+    <ImageCompare
+      before="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-light-mode.png"
+      after="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-dark-mode.png"
+    />
+    <!-- <video
+      class="floating w-[85%] lg:w-[70%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
+      loop
+      autoplay
+    >
+      <source
+        src="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/dark-light-mode-demo.mp4"
+        type="video/mp4"
+      />
+      <track kind="captions" />
+    </video> -->
   </div>
+
+  {#if PUBLIC_ENABLE_USERS_COMPANIES}
+    <div class="px-[15%] mb-[10%]">
+      <h2 class="inter text-base lg:text-xl font-semibold text-gray-900">
+        Used at
+      </h2>
+      <div
+        class="w-full flex flex-wrap flex-row gap-5 justify-between items-center py-[5%]"
+      >
+        <img src="/hero-1.svg" alt="" class="w-[30%] lg:w-[13%]" />
+        <img src="/hero-2.svg" alt="" class="w-[30%] lg:w-[13%]" />
+        <img src="/hero-3.svg" alt="" class="w-[30%] lg:w-[13%]" />
+        <img src="/hero-4.svg" alt="" class="w-[30%] lg:w-[13%]" />
+        <img src="/hero-5.svg" alt="" class="w-[30%] lg:w-[13%]" />
+      </div>
+    </div>
+  {/if}
 </div>
-
-<style>
-  .floating {
-    -webkit-animation: floating 2.5s linear infinite;
-    animation: floating 2.5s linear infinite;
-  }
-
-  @-webkit-keyframes floating {
-    0%,
-    100% {
-      -webkit-transform: translateY(0rem);
-      transform: translateY(0rem);
-    }
-    50% {
-      -webkit-transform: translateY(1rem);
-      transform: translateY(1rem);
-    }
-  }
-
-  @keyframes floating {
-    0%,
-    100% {
-      -webkit-transform: translateY(0rem);
-      transform: translateY(0rem);
-    }
-    50% {
-      -webkit-transform: translateY(1rem);
-      transform: translateY(1rem);
-    }
-  }
-</style>
