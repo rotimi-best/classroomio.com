@@ -42,9 +42,7 @@
   $: h = imgOffset && imgOffset.height;
   $: x = w * offset;
   $: opacity = hideOnSlide && sliding ? 0 : 1;
-  $: style = contain
-    ? `width:100%;height:100%;`
-    : `width:${w}px;height:${h}px;`;
+  $: style = contain ? `width:100%;height:100%;` : `width:60vw;height:60vh;`;
 </script>
 
 <svelte:window on:resize={resize} />
