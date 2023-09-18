@@ -38,11 +38,11 @@
   </a>
 
   <div class="relative my-10 md:my-20">
-    <ImageCompare
+    <!-- <ImageCompare
       before="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-light-mode.png"
       after="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-dark-mode.png"
-    />
-    <!-- <video
+    /> -->
+    <video
       class="floating w-[85%] lg:w-[70%] mx-auto my-[7%] border-x-2 border-t-2 rounded-xl"
       loop
       autoplay
@@ -52,7 +52,7 @@
         type="video/mp4"
       />
       <track kind="captions" />
-    </video> -->
+    </video>
   </div>
 
   {#if PUBLIC_ENABLE_USERS_COMPANIES}
