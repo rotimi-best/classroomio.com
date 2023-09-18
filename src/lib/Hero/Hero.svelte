@@ -42,7 +42,16 @@
       before="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-light-mode.png"
       after="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-dark-mode.png"
     /> -->
-    <video class="floating w-[85%] lg:w-[70%] mx-auto my-[7%]" loop autoplay>
+    <video
+      class="floating w-[85%] lg:w-[70%] mx-auto my-[7%] rounded-xl"
+      autoplay
+      loop
+      muted
+      defaultMuted
+      playsinline
+      oncontextmenu="return false;"
+      preload="auto"
+    >
       <source
         src="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/dark-light-mode-demo.mp4"
         type="video/mp4"
