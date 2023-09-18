@@ -1,8 +1,14 @@
-<h1 class="text-3xl font-bold underline">Welcome to classroomIO</h1>
+<script>
+  import { Body, Faq, Hero, Pricing } from '$lib';
+  import { PUBLIC_ENABLE_PRICING, PUBLIC_ENABLE_FAQ } from '$env/static/public';
+</script>
 
-<style lang="postcss">
-  /* Change this to what it needs to be */
-  :global(html) {
-    /* background-color: theme(colors.blue.100); */
-  }
-</style>
+<Hero />
+<Body />
+
+{#if PUBLIC_ENABLE_PRICING}
+  <Pricing />
+{/if}
+{#if PUBLIC_ENABLE_FAQ}
+  <Faq />
+{/if}

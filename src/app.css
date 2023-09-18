@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Lexend', sans-serif;
   overflow-x: hidden;
 }
 
@@ -17,4 +16,33 @@ li {
 
 .inter {
   font-family: 'Inter', sans-serif;
+}
+
+.floating {
+  -webkit-animation: floating 2.5s linear infinite;
+  animation: floating 2.5s linear infinite;
+}
+
+@-webkit-keyframes floating {
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+  }
 }
