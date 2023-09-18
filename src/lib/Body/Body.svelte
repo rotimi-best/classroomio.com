@@ -2,8 +2,10 @@
   import Section from './Section.svelte';
   import { fly } from 'svelte/transition';
   import { PUBLIC_ENABLE_STATS } from '$env/static/public';
+  import { onMount } from 'svelte';
 
   let selected = 0;
+  let interval = 0;
 
   const moreFeatures = [
     {
@@ -35,6 +37,12 @@
       image: '/download-pdf.png',
     },
   ];
+
+  onMount(() => {
+    interval = setInterval(() => {
+      selected = moreFeatures[selected + 1] ? selected + 1 : 0;
+    }, 3000);
+  });
 </script>
 
 <Section
@@ -158,6 +166,7 @@
               'selected'} mb-3 text-start min-w-[75vw] lg:min-w-[unset]"
             on:click={() => {
               selected = i;
+              clearInterval(interval);
             }}
           >
             <h4 class="text-lg font-semibold">

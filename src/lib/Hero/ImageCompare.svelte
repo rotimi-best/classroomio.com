@@ -15,6 +15,9 @@
 
   function resize(e) {
     imgOffset = (e.type === 'load' ? e.target : img).getBoundingClientRect();
+    w = imgOffset && imgOffset.width;
+    h = imgOffset && imgOffset.height;
+    style = contain ? `width:100%;height:100%;` : `width:${w}px;height:${h}px;`;
   }
 
   function move(e) {
@@ -42,7 +45,9 @@
   $: h = imgOffset && imgOffset.height;
   $: x = w * offset;
   $: opacity = hideOnSlide && sliding ? 0 : 1;
-  $: style = contain ? `width:100%;height:100%;` : `width:60vw;height:60vh;`;
+  $: style = contain
+    ? `width:100%;height:100%;`
+    : `width:${w}px;height:${h}px;`;
 </script>
 
 <svelte:window on:resize={resize} />
@@ -178,5 +183,11 @@
     left: 5px;
     top: 7px;
     border-right: 10px solid white;
+  }
+
+  img,
+  .overlay,
+  .container {
+    max-height: 500px;
   }
 </style>
