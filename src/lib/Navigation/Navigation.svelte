@@ -134,9 +134,9 @@
         Sign Up
       </button>
     </a> -->
-    <a href="https://app.classroomio.com/login" target="_blank">
+    <a href="https://cal.com/digdippa/30min" target="_blank">
       <button class="font-medium text-sm after:content-['→'] after:ml-2">
-        Dashboard
+        Book a Demo
       </button>
     </a>
   </div>
@@ -207,11 +207,11 @@
           class="text-black font-semibold rounded-md mr-10 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
           >Sign Up</button
         > -->
-        <a href="https://app.classroomio.com/login" target="_blank">
+        <a href="https://cal.com/digdippa/30min" target="_blank">
           <button
             class="font-semibold after:content-['→'] rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
           >
-            Dashboard
+            Book a Demo
           </button>
         </a>
       </div>

@@ -47,71 +47,29 @@
 
 <Section
   id="coursemanagement"
-  tagline="👍🏽 Simplify"
-  title="Efficient Course Management"
-  description="ClassroomIO empowers educators by providing a user-friendly platform that simplifies assessment, grading, attendance, and scorebook management. This comprehensive toolset enhances the teaching experience, saves time, and ensures data accuracy, ultimately benefiting both teachers and students."
+  tagline="👍🏽 Simplified"
+  title="Advanced Course Management"
+  description="ClassroomIO simplifies teaching tasks, boosts the educational experience, and is beneficial for both educators and students, providing a user-friendly platform for assessment, grading, attendance, and scorebook management."
   video="/course-management.mp4"
->
-  <div slot="more">
-    <p>
-      <strong>Efficient Teaching</strong><br />
-      ClassroomIO simplifies teaching tasks, allowing educators to focus on teaching.
-    </p>
-    <p>
-      <strong>Assessment Ease</strong><br />
-      Create, distribute, and grade assessments effortlessly.
-    </p>
-    <p>
-      <strong>Grade Automation</strong><br />
-      Automate grade calculations for accuracy and time-saving.
-    </p>
-    <p>
-      <strong>Attendance Tracking</strong><br />
-      Easily record and monitor student attendance
-    </p>
-  </div>
-</Section>
+  rightToLeft={true}
+/>
 <Section
   id="customization"
   tagline="🫰🏽 Flexible"
-  title="Customize the Platform to Fit your Needs"
+  title="Customization at its Core"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
   video="/lms-customization.mp4"
->
-  <div slot="more">
-    <div>
-      <strong> Easy Setup </strong>
-      <p>
-        Get started quickly with our user-friendly interface and intuitive
-        customization options.
-      </p>
-    </div>
-    <div>
-      <strong>Flexible Design</strong>
-      <p>
-        Tailor the look and feel of your LMS to match your organization's
-        branding and style
-      </p>
-    </div>
-  </div>
-</Section>
+/>
+
 <Section
   id="collaboration"
   tagline="🤜🏽🤛🏽 Collaboration"
-  title="Foster Collaboration with Our Forum-Like Feature"
+  title="Your Knowledge Base"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"
->
-  <div slot="more">
-    <p>👉 Ask questions and get answers from fellow students and teachers.</p>
-    <p>👉 Engage in discussions and share knowledge with the community</p>
-    <p>
-      👉 Collaborate with peers and educators to enhance your learning
-      experience
-    </p>
-  </div>
-</Section>
+  rightToLeft={true}
+/>
 <Section
   id="ai"
   tagline="🦾 Productivity"
@@ -119,24 +77,7 @@
   description="Our platform integrates AI to simplify lesson outline generation, streamline lesson planning and spark creative ideas. With ClassroomIO, educators can focus on what matters most: teaching."
   rightToLeft={true}
   video="/ai-lesson.mp4"
->
-  <div slot="more">
-    <div>
-      <strong>👌🏽 Simplify</strong>
-      <p>
-        Generate lesson outlines, plan engaging lessons, and inspire stduents
-        with AI Technology.
-      </p>
-    </div>
-    <div>
-      <strong>👇🏽 Streamline</strong>
-      <p>
-        Effortlessly plan lessons, spark creativity, and enhance teaching with
-        AI integration.
-      </p>
-    </div>
-  </div>
-</Section>
+/>
 
 <!-- More Features -->
 <section id="morefeatures" class="py-[10%] px-3 lg:px-0 bg-gray-50">
