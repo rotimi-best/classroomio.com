@@ -3,34 +3,43 @@
   import { fly } from 'svelte/transition';
   import { PUBLIC_ENABLE_STATS } from '$env/static/public';
   import { onMount } from 'svelte';
+  import {
+    TeamManagement,
+    AutoVideo,
+    CustomizableLanding,
+    DownloadableLesson,
+    PointingRight,
+    PointingDown,
+    Simplify,
+  } from '../../emojis';
 
   let selected = 0;
   let interval = 0;
 
   const moreFeatures = [
     {
-      icon: '🌐',
+      icon: CustomizableLanding,
       title: 'Customizable Landing Page',
       description:
         'A minimalistic landing page template out of the box to share your courses with the world',
       image: '/landing-page-builder.png',
     },
     {
-      icon: '🔐',
+      icon: TeamManagement,
       title: 'Team management',
       description:
         'Extend invitations and manage your teaching institution seamlessly through ClassroomIO.',
       image: '/team-management.png',
     },
     {
-      icon: '📹',
+      icon: AutoVideo,
       title: 'Auto Video Transcription',
       description:
         'AI automatically transcribes videos, making content searchable for seamless student access.',
       image: '/video-transcription.png',
     },
     {
-      icon: '🗃️',
+      icon: DownloadableLesson,
       title: 'Downloadable Lesson PDF',
       description:
         'Students can download lessons automatically for offline access.',
@@ -39,15 +48,17 @@
   ];
 
   onMount(() => {
-    interval = setInterval(() => {
-      selected = moreFeatures[selected + 1] ? selected + 1 : 0;
-    }, 3000);
+    if (window.innerWidth > 768) {
+      interval = setInterval(() => {
+        selected = moreFeatures[selected + 1] ? selected + 1 : 0;
+      }, 3000);
+    }
   });
 </script>
 
 <Section
   id="coursemanagement"
-  tagline="👍🏽 Simplify"
+  taglineKey="Simplify"
   title="Efficient Course Management"
   description="ClassroomIO empowers educators by providing a user-friendly platform that simplifies assessment, grading, attendance, and scorebook management. This comprehensive toolset enhances the teaching experience, saves time, and ensures data accuracy, ultimately benefiting both teachers and students."
   video="/course-management.mp4"
@@ -73,7 +84,7 @@
 </Section>
 <Section
   id="customization"
-  tagline="🫰🏽 Flexible"
+  taglineKey="Flexible"
   title="Customize the Platform to Fit your Needs"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
@@ -98,23 +109,29 @@
 </Section>
 <Section
   id="collaboration"
-  tagline="🤜🏽🤛🏽 Collaboration"
+  taglineKey="Collaboration"
   title="Foster Collaboration with Our Forum-Like Feature"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"
 >
   <div slot="more">
-    <p>👉 Ask questions and get answers from fellow students and teachers.</p>
-    <p>👉 Engage in discussions and share knowledge with the community</p>
-    <p>
-      👉 Collaborate with peers and educators to enhance your learning
-      experience
+    <p class="flex gap-2">
+      <img src={PointingRight} alt="" class="mt-[-7%] w-7" /> Ask questions and get
+      answers from fellow students and teachers.
+    </p>
+    <p class="flex gap-2">
+      <img src={PointingRight} alt="" class="mt-[-7%] w-7" /> Engage in discussions
+      and share knowledge with the community.
+    </p>
+    <p class="flex gap-2">
+      <img src={PointingRight} alt="" class="mt-[-7%] w-7" /> Collaborate with peers
+      and educators to enhance your learning experience.
     </p>
   </div>
 </Section>
 <Section
   id="ai"
-  tagline="🦾 Productivity"
+  taglineKey="Productivity"
   title="AI Integration for Lesson Planning"
   description="Our platform integrates AI to simplify lesson outline generation, streamline lesson planning and spark creative ideas. With ClassroomIO, educators can focus on what matters most: teaching."
   rightToLeft={true}
@@ -122,14 +139,18 @@
 >
   <div slot="more">
     <div>
-      <strong>👌🏽 Simplify</strong>
+      <strong class="flex gap-3"
+        ><img src={Simplify} alt="" class="w-[6%] lg:w-[4%]" /> Simplify</strong
+      >
       <p>
         Generate lesson outlines, plan engaging lessons, and inspire stduents
         with AI Technology.
       </p>
     </div>
     <div>
-      <strong>👇🏽 Streamline</strong>
+      <strong class="flex gap-3"
+        ><img src={PointingDown} alt="" class="w-[6%] lg:w-[4%]" /> Streamline</strong
+      >
       <p>
         Effortlessly plan lessons, spark creativity, and enhance teaching with
         AI integration.
@@ -158,7 +179,7 @@
       id="image-container"
     >
       <div
-        class="w-[95%] p-3 overflow-x-scroll mt-5 lg:mt-0 lg:w-[45%] flex lg:block"
+        class="w-[95%] p-3 mt-5 overflow-auto lg:overflow-hidden lg:mt-0 lg:w-[45%] flex lg:block"
       >
         {#each moreFeatures as moreFeature, i}
           <button
@@ -169,8 +190,8 @@
               clearInterval(interval);
             }}
           >
-            <h4 class="text-lg font-semibold">
-              <span class="mr-1">{moreFeature.icon}</span>
+            <h4 class="text-lg font-semibold flex gap-3">
+              <img src={moreFeature.icon} alt={moreFeature.title} class="w-5" />
               {moreFeature.title}
             </h4>
             <p>{moreFeature.description}</p>
