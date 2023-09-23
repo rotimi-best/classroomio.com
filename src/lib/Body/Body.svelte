@@ -75,7 +75,7 @@
 
 <Section
   id="collaboration"
-  tagline="🤜🏽🤛🏽 Collaboration"
+  taglineKey="Collaboration"
   title="Your Knowledge Base"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"

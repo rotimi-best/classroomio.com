@@ -25,7 +25,7 @@
   >
     <div class="w-[80vw] flex flex-col">
       <div class="my-4 flex gap-3">
-        {#if taglineKey === 'Simplify'}
+        {#if taglineKey === 'Simplified'}
           <img src={ThumbsUp} alt="    ThumbsUp Icon" class="w-5" />
         {:else if taglineKey === 'Flexible'}
           <img src={Flexible} alt="Flexible Icon" class="w-5" />
