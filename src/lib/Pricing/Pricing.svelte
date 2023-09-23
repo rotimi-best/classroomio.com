@@ -9,17 +9,17 @@
 
   const proFeatures = [
     '10 Courses',
-    'Unlimited Students',
-    '1 Admin',
-    'Basic Course Builder',
-    '10 Forum conversations',
+    '100 Students (+$2 per student)',
+    '1 Admin & 5 Teachers',
+    'Full Course Builder (lessons, grading and attendance)',
+    '50 Forum conversations',
     'Remove ClassroomIO Badge',
   ];
   const teamFeatures = [
-    'Unlimited Courses',
+    '100 Courses',
     'Unlimited Students',
-    '5 Admin',
-    'Full Course Builder',
+    '5 Admins and 10 teachers',
+    'Advanced Course Builder (certificate builder)',
     'Unlimited Forum conversations',
     'AI Video transcription',
   ];
@@ -87,7 +87,7 @@
         <h1
           class="mt-6 flex items-baseline gap-x-1 text-4xl lg:text-4xl font-medium inter"
         >
-          ${prices ? '10' : '12'} <sub class="text-base">/mo</sub>
+          ${prices ? '34' : '39'} <sub class="text-base">/mo</sub>
         </h1>
         <a href="https://cal.com/digdippa/30min" target="_blank">
           <button
@@ -123,7 +123,7 @@
         <h1
           class="text-white mt-6 lg:mt-6 flex items-baseline gap-x-1 text-4xl lg:text-4xl font-medium inter"
         >
-          ${prices ? '30' : '36'} <sub class="text-base">/mo</sub>
+          ${prices ? '94' : '99'} <sub class="text-base">/mo</sub>
         </h1>
         <a href="https://cal.com/digdippa/30min" target="_blank">
           <button
