@@ -1,42 +1,32 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Section from './Section.svelte';
   import { fly } from 'svelte/transition';
   import { PUBLIC_ENABLE_STATS } from '$env/static/public';
-  import { onMount } from 'svelte';
-  import {
-    TeamManagement,
-    AutoVideo,
-    CustomizableLanding,
-    DownloadableLesson,
-  } from '../../emojis';
 
   let selected = 0;
   let interval = 0;
 
   const moreFeatures = [
     {
-      icon: CustomizableLanding,
       title: 'Customizable Landing Page',
       description:
         'A minimalistic landing page template out of the box to share your courses with the world',
       image: '/landing-page-builder.png',
     },
     {
-      icon: TeamManagement,
       title: 'Team management',
       description:
         'Extend invitations and manage your teaching institution seamlessly through ClassroomIO.',
       image: '/team-management.png',
     },
     {
-      icon: AutoVideo,
       title: 'Auto Video Transcription',
       description:
         'AI automatically transcribes videos, making content searchable for seamless student access.',
       image: '/video-transcription.png',
     },
     {
-      icon: DownloadableLesson,
       title: 'Downloadable Lesson PDF',
       description:
         'Students can download lessons automatically for offline access.',
@@ -55,7 +45,7 @@
 
 <Section
   id="coursemanagement"
-  taglineKey="Simplified"
+  tagline="Simplified"
   title="Advanced Course Management"
   description="ClassroomIO simplifies teaching tasks, boosts the educational experience, and is beneficial for both educators and students, providing a user-friendly platform for assessment, grading, attendance, and scorebook management."
   video="/course-management.mp4"
@@ -63,7 +53,7 @@
 />
 <Section
   id="customization"
-  taglineKey="Flexible"
+  tagline="Flexible"
   title="Customization at its Core"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
@@ -96,7 +86,7 @@
       >
         There is More...
       </h2>
-      <p class="mt-4 text-lg inter text-gray-500 w-[90%] lg:w-4/5">
+      <p class="mt-4 text-lg inter text-gray-500 w-[94%] lg:w-4/5">
         ClassroomIO is packed with useful features while we try to make it easy
         to use.
       </p>
@@ -119,7 +109,6 @@
             }}
           >
             <h4 class="text-lg font-semibold flex gap-3">
-              <img src={moreFeature.icon} alt={moreFeature.title} class="w-5" />
               {moreFeature.title}
             </h4>
             <p>{moreFeature.description}</p>
