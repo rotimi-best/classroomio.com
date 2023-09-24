@@ -8,9 +8,6 @@
     AutoVideo,
     CustomizableLanding,
     DownloadableLesson,
-    PointingRight,
-    PointingDown,
-    Simplify,
   } from '../../emojis';
 
   let selected = 0;
@@ -93,13 +90,13 @@
 <!-- More Features -->
 <section id="morefeatures" class="py-[10%] px-3 lg:px-0 bg-gray-50">
   <div class="mx-0 lg:mx-[12%]">
-    <div class="w-4/5 mb-14">
+    <div class="w-full lg:w-4/5 mx-4 lg:mx-0 mb-14">
       <h2
         class="mt-2 text-3xl font-bold font-display tracking-tight lg:text-4xl"
       >
         There is More...
       </h2>
-      <p class="mt-4 text-lg inter text-gray-500 w-4/5">
+      <p class="mt-4 text-lg inter text-gray-500 w-[90%] lg:w-4/5">
         ClassroomIO is packed with useful features while we try to make it easy
         to use.
       </p>
