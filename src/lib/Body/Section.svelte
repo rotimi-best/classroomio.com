@@ -1,17 +1,10 @@
 <script>
   export let id = '';
   export let rightToLeft = false;
-  export let taglineKey = '';
+  export let tagline = '';
   export let title = '';
   export let description = '';
   export let video = '';
-
-  import {
-    Flexible,
-    Collaboration,
-    Productivity,
-    ThumbsUp,
-  } from '../../emojis';
 </script>
 
 <section
@@ -24,17 +17,8 @@
       : 'lg:flex-row'} items-center justify-between gap-28"
   >
     <div class="w-[80vw] flex flex-col">
-      <div class="my-4 flex gap-3">
-        {#if taglineKey === 'Simplified'}
-          <img src={ThumbsUp} alt="    ThumbsUp Icon" class="w-5" />
-        {:else if taglineKey === 'Flexible'}
-          <img src={Flexible} alt="Flexible Icon" class="w-5" />
-        {:else if taglineKey === 'Collaboration'}
-          <img src={Collaboration} alt="Collaboration Icon" class="w-8" />
-        {:else if taglineKey === 'Productivity'}
-          <img src={Productivity} alt="Productivity Icon" class="w-5" />
-        {/if}
-        <p class="font-bold text-xl">{taglineKey}</p>
+      <div class="my-4 ml-1 flex gap-3">
+        <p class="font-medium text-md">{tagline}</p>
       </div>
       <h2 class="font-bold text-4xl mb-6">{title}</h2>
       <p class="leading-8 text-lg text-gray-500">
