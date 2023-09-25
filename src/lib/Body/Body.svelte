@@ -1,36 +1,37 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Section from './Section.svelte';
   import { fly } from 'svelte/transition';
   import { PUBLIC_ENABLE_STATS } from '$env/static/public';
-  import { onMount } from 'svelte';
+  import { folder, globe, team, transcription } from '$lib/emojis';
 
   let selected = 0;
   let interval = 0;
 
   const moreFeatures = [
     {
-      icon: '🌐',
+      icon: globe,
       title: 'Customizable Landing Page',
       description:
         'A minimalistic landing page template out of the box to share your courses with the world',
       image: '/landing-page-builder.png',
     },
     {
-      icon: '🔐',
+      icon: team,
       title: 'Team management',
       description:
         'Extend invitations and manage your teaching institution seamlessly through ClassroomIO.',
       image: '/team-management.png',
     },
     {
-      icon: '📹',
+      icon: transcription,
       title: 'Auto Video Transcription',
       description:
         'AI automatically transcribes videos, making content searchable for seamless student access.',
       image: '/video-transcription.png',
     },
     {
-      icon: '🗃️',
+      icon: folder,
       title: 'Downloadable Lesson PDF',
       description:
         'Students can download lessons automatically for offline access.',
@@ -39,15 +40,18 @@
   ];
 
   onMount(() => {
-    interval = setInterval(() => {
-      selected = moreFeatures[selected + 1] ? selected + 1 : 0;
-    }, 3000);
+    if (window.innerWidth > 768) {
+      interval = setInterval(() => {
+        selected = moreFeatures[selected + 1] ? selected + 1 : 0;
+      }, 3000);
+    }
   });
 </script>
 
 <Section
   id="coursemanagement"
-  tagline="👍🏽 Simplified"
+  tagline="Simplified"
+  taglineIcon="simplified"
   title="Advanced Course Management"
   description="ClassroomIO simplifies teaching tasks, boosts the educational experience, and is beneficial for both educators and students, providing a user-friendly platform for assessment, grading, attendance, and scorebook management."
   video="/course-management.mp4"
@@ -55,7 +59,8 @@
 />
 <Section
   id="customization"
-  tagline="🫰🏽 Flexible"
+  tagline="Flexible"
+  taglineIcon="flexible"
   title="Customization at its Core"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
@@ -64,7 +69,8 @@
 
 <Section
   id="collaboration"
-  tagline="🤜🏽🤛🏽 Collaboration"
+  tagline="Collaboration"
+  taglineIcon="collaboration"
   title="Your Knowledge Base"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"
@@ -72,7 +78,8 @@
 />
 <Section
   id="ai"
-  tagline="🦾 Productivity"
+  tagline="Productivity"
+  taglineIcon="productivity"
   title="AI Integration for Lesson Planning"
   description="Our platform integrates AI to simplify lesson outline generation, streamline lesson planning and spark creative ideas. With ClassroomIO, educators can focus on what matters most: teaching."
   rightToLeft={true}
@@ -82,13 +89,13 @@
 <!-- More Features -->
 <section id="morefeatures" class="py-[10%] px-3 lg:px-0 bg-gray-50">
   <div class="mx-0 lg:mx-[12%]">
-    <div class="w-4/5 mb-14">
+    <div class="w-full lg:w-4/5 mx-4 lg:mx-0 mb-14">
       <h2
         class="mt-2 text-3xl font-bold font-display tracking-tight lg:text-4xl"
       >
         There is More...
       </h2>
-      <p class="mt-4 text-lg inter text-gray-500 w-4/5">
+      <p class="mt-4 text-lg inter text-gray-500 w-[94%] lg:w-4/5">
         ClassroomIO is packed with useful features while we try to make it easy
         to use.
       </p>
@@ -99,7 +106,7 @@
       id="image-container"
     >
       <div
-        class="w-[95%] p-3 overflow-x-scroll mt-5 lg:mt-0 lg:w-[45%] flex lg:block"
+        class="w-[95%] p-3 mt-5 overflow-auto lg:overflow-hidden lg:mt-0 lg:w-[45%] flex lg:block"
       >
         {#each moreFeatures as moreFeature, i}
           <button
@@ -110,10 +117,12 @@
               clearInterval(interval);
             }}
           >
-            <h4 class="text-lg font-semibold">
-              <span class="mr-1">{moreFeature.icon}</span>
-              {moreFeature.title}
-            </h4>
+            <div class="flex gap-1 items-center">
+              <img src={moreFeature.icon} alt="" class="w-8" />
+              <h4 class="text-lg font-semibold">
+                {moreFeature.title}
+              </h4>
+            </div>
             <p>{moreFeature.description}</p>
           </button>
         {/each}
