@@ -9,7 +9,7 @@
 
   export let id = '';
   export let rightToLeft = false;
-  export let taglineKey = '';
+  export let tagline = '';
   export let title = '';
   export let description = '';
   export let video = '';
@@ -26,19 +26,19 @@
   >
     <div class="w-[80vw] flex flex-col">
       <div class="my-4 ml-1 flex gap-2 items-center">
-        {#if taglineKey === 'Simplified'}
+        {#if tagline === 'Simplified'}
           <img src={thumbsUp} alt="" class="w-7" />
-        {:else if taglineKey === 'Flexible'}
+        {:else if tagline === 'Flexible'}
           <img src={flexible} alt="" class="w-7" />
-        {:else if taglineKey === 'Collaboration'}
+        {:else if tagline === 'Collaboration'}
           <div class="flex items-center">
             <img src={leftFist} alt="" class="w-6" />
             <img src={rightFist} alt="" class="w-6" />
           </div>
-        {:else if taglineKey === 'Productivity'}
+        {:else if tagline === 'Productivity'}
           <img src={robotArm} alt="" class="w-7" />
         {/if}
-        <p class="font-medium text-md">{taglineKey}</p>
+        <p class="font-medium text-md">{tagline}</p>
       </div>
       <h2 class="font-bold text-4xl mb-6">{title}</h2>
       <p class="leading-8 text-lg text-gray-500">
