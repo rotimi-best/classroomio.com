@@ -3,30 +3,35 @@
   import Section from './Section.svelte';
   import { fly } from 'svelte/transition';
   import { PUBLIC_ENABLE_STATS } from '$env/static/public';
+  import { folder, globe, team, transcription } from '$lib/emojis';
 
   let selected = 0;
   let interval = 0;
 
   const moreFeatures = [
     {
+      icon: globe,
       title: 'Customizable Landing Page',
       description:
         'A minimalistic landing page template out of the box to share your courses with the world',
       image: '/landing-page-builder.png',
     },
     {
+      icon: team,
       title: 'Team management',
       description:
         'Extend invitations and manage your teaching institution seamlessly through ClassroomIO.',
       image: '/team-management.png',
     },
     {
+      icon: transcription,
       title: 'Auto Video Transcription',
       description:
         'AI automatically transcribes videos, making content searchable for seamless student access.',
       image: '/video-transcription.png',
     },
     {
+      icon: folder,
       title: 'Downloadable Lesson PDF',
       description:
         'Students can download lessons automatically for offline access.',
@@ -45,7 +50,7 @@
 
 <Section
   id="coursemanagement"
-  tagline="Simplified"
+  taglineKey="Simplified"
   title="Advanced Course Management"
   description="ClassroomIO simplifies teaching tasks, boosts the educational experience, and is beneficial for both educators and students, providing a user-friendly platform for assessment, grading, attendance, and scorebook management."
   video="/course-management.mp4"
@@ -53,7 +58,7 @@
 />
 <Section
   id="customization"
-  tagline="Flexible"
+  taglineKey="Flexible"
   title="Customization at its Core"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
@@ -62,7 +67,7 @@
 
 <Section
   id="collaboration"
-  tagline="Collaboration"
+  taglineKey="Collaboration"
   title="Your Knowledge Base"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"
@@ -70,7 +75,7 @@
 />
 <Section
   id="ai"
-  tagline="Productivity"
+  taglineKey="Productivity"
   title="AI Integration for Lesson Planning"
   description="Our platform integrates AI to simplify lesson outline generation, streamline lesson planning and spark creative ideas. With ClassroomIO, educators can focus on what matters most: teaching."
   rightToLeft={true}
@@ -108,9 +113,12 @@
               clearInterval(interval);
             }}
           >
-            <h4 class="text-lg font-semibold flex gap-3">
-              {moreFeature.title}
-            </h4>
+            <div class="flex gap-1 items-center">
+              <img src={moreFeature.icon} alt="" class="w-8" />
+              <h4 class="text-lg font-semibold">
+                {moreFeature.title}
+              </h4>
+            </div>
             <p>{moreFeature.description}</p>
           </button>
         {/each}
