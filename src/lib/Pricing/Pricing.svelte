@@ -28,7 +28,10 @@
 <section id="pricing" class="py-[12%]">
   <div class=" px-[6%] lg:px-[22%] flex flex-col justify-center items-center">
     <div class="text-center mb-[3%]">
-      <h3 class="inter text-[#1D4EE2] text-md font-semibold tracking-wide">
+      <h3
+        id="pricing"
+        class="inter text-[#1D4EE2] text-md font-semibold tracking-wide"
+      >
         Pricing
       </h3>
       <h1

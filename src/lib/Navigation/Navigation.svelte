@@ -198,7 +198,7 @@
           <li
             class="text-gray-800 font-semibold text-sm md:text-lg cursor-pointer hover:bg-gray-100 py-3 px-4 rounded-xl w-full"
           >
-            Pricing
+            <a href="#pricing"> Pricing </a>
           </li>
         </ul>
       </nav>
