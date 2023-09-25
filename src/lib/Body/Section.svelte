@@ -13,6 +13,7 @@
   export let title = '';
   export let description = '';
   export let video = '';
+  export let taglineIcon = '';
 </script>
 
 <section
@@ -26,16 +27,16 @@
   >
     <div class="w-[80vw] flex flex-col">
       <div class="my-4 ml-1 flex gap-2 items-center">
-        {#if tagline === 'Simplified'}
+        {#if taglineIcon === 'simplified'}
           <img src={thumbsUp} alt="" class="w-7" />
-        {:else if tagline === 'Flexible'}
+        {:else if taglineIcon === 'flexible'}
           <img src={flexible} alt="" class="w-7" />
-        {:else if tagline === 'Collaboration'}
+        {:else if taglineIcon === 'collaboration'}
           <div class="flex items-center">
             <img src={leftFist} alt="" class="w-6" />
             <img src={rightFist} alt="" class="w-6" />
           </div>
-        {:else if tagline === 'Productivity'}
+        {:else if taglineIcon === 'productivity'}
           <img src={robotArm} alt="" class="w-7" />
         {/if}
         <p class="font-medium text-md">{tagline}</p>
