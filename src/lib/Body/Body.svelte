@@ -50,7 +50,7 @@
 
 <Section
   id="coursemanagement"
-  taglineKey="Simplified"
+  tagline="Simplified"
   title="Advanced Course Management"
   description="ClassroomIO simplifies teaching tasks, boosts the educational experience, and is beneficial for both educators and students, providing a user-friendly platform for assessment, grading, attendance, and scorebook management."
   video="/course-management.mp4"
@@ -58,7 +58,7 @@
 />
 <Section
   id="customization"
-  taglineKey="Flexible"
+  tagline="Flexible"
   title="Customization at its Core"
   description="ClassroomIO offers organizations the ability to tailor our LMS to their specific requirements. With our customizable features, you can create a personalized learning environment that aligns with your organization's goals"
   rightToLeft={true}
@@ -67,7 +67,7 @@
 
 <Section
   id="collaboration"
-  taglineKey="Collaboration"
+  tagline="Collaboration"
   title="Your Knowledge Base"
   description="Our platform includes a forum-like feature where students and teachers can ask and answer questions, creating a collaborative learning environment. This fosters engagement and knowledge sharing among the community"
   video="/community.mp4"
@@ -75,7 +75,7 @@
 />
 <Section
   id="ai"
-  taglineKey="Productivity"
+  tagline="Productivity"
   title="AI Integration for Lesson Planning"
   description="Our platform integrates AI to simplify lesson outline generation, streamline lesson planning and spark creative ideas. With ClassroomIO, educators can focus on what matters most: teaching."
   rightToLeft={true}
