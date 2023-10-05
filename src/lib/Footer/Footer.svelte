@@ -21,7 +21,7 @@
         <br />
         Making teaching and learning seamless
       </p>
-      <div class="flex mt-5 lg:mt-10 gap-3 lg:gap-7">
+      <div class="flex items-center mt-5 lg:mt-10 gap-3 lg:gap-7">
         <a href="https://www.facebook.com/classroomiohq" target="_blank">
           <LogoFacebook
             class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
@@ -29,9 +29,10 @@
           />
         </a>
         <a href="https://twitter.com/classroomio" target="_blank">
-          <LogoTwitter
-            class="fill-gray-400 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
-            size={20}
+          <img
+            src="/twitter_logo.png"
+            alt=""
+            class="w-3 hover:fill-gray-500 hover:scale-110 scale-90 lg:scale-150 transition-all cursor-pointer"
           />
         </a>
         <a href="https://www.youtube.com/@ClassroomIO" target="_blank">
