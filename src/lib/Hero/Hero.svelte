@@ -39,8 +39,8 @@
 
   <div class="relative my-10 md:my-20">
     <!-- <ImageCompare
-      before="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-light-mode.png"
-      after="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/courses-dark-mode.png"
+      before="https://tapaozmyjsuykgerrfkt.supabase.co/storage/v1/object/public/avatars/landingpage/courses-light-mode.png"
+      after="https://tapaozmyjsuykgerrfkt.supabase.co/storage/v1/object/public/avatars/landingpage/courses-dark-mode.png"
     /> -->
     <video
       class="floating w-[85%] lg:w-[70%] mx-auto my-[7%] rounded-xl"
@@ -53,7 +53,7 @@
       preload="auto"
     >
       <source
-        src="https://koxqonvbkeakwvmdegcf.supabase.co/storage/v1/object/public/avatars/landingpage/dark-light-mode-demo.mp4"
+        src="https://tapaozmyjsuykgerrfkt.supabase.co/storage/v1/object/public/avatars/landingpage/dark-light-mode-demo.mp4"
         type="video/mp4"
       />
       <track kind="captions" />
