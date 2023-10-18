@@ -172,6 +172,16 @@
   <footer
     class="border-t-[1px] py-[3%] text-xs lg:text-md leading-5 font-light text-gray-500 text-center lg:text-left"
   >
-    © {new Date().getFullYear()} ClassroomIO. All rights reserved.
+    <p>All rights reserved.</p>
+    <p class="flex items-center">
+      ClassroomIO © {new Date().getFullYear()} by
+      <a
+        href="https://twitter.com/rotimi_best"
+        target="_blank"
+        class="underline text-blue-700 mx-1">Rotimi Best</a
+      >
+      from
+      <img alt="Nigerian Flag" src="/ng.png" class="ml-2 h-3 w-3" />
+    </p>
   </footer>
 </div>
