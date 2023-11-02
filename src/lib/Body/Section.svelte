@@ -52,14 +52,6 @@
           <slot name="more" />
         </p>
       {/if}
-
-      <a
-        href="https://cal.com/digdippa/30min"
-        target="_blank"
-        class="my-6 font-bold"
-      >
-        <span style="color:#1d4ed8">Book a Demo→</span>
-      </a>
     </div>
     <div class="w-[95vw] md:w-[80vw] lg:w-full">
       <video
@@ -69,7 +61,6 @@
         muted
         defaultMuted
         playsinline
-        oncontextmenu="return false;"
         preload="auto"
       >
         <source src={video} type="video/mp4" />
