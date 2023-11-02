@@ -44,33 +44,35 @@
     {
       key: 'coursemanagement',
       title: 'Course Management',
-      subtitle: "Understand what's helpful and what isn't",
+      subtitle: 'Advanced course management tools ',
     },
     {
       key: 'customization',
       title: 'Customizations',
-      subtitle: "Understand what's helpful and what isn't",
+      subtitle: 'Customize your classroom to your needs',
     },
     {
       key: 'collaboration',
       title: 'Forum',
-      subtitle: "Understand what's helpful and what isn't",
+      subtitle: 'Seamlessly collaborate with your students',
     },
     {
       key: 'ai',
       title: 'AI Lesson Planner',
-      subtitle: "Understand what's helpful and what isn't",
+      subtitle: "10x Educator's productivity with AI",
     },
   ];
 </script>
 
 <div
-  class="flex w-full justify-between items-center py-6 border-b-[1px] lg:px-[14%] md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-xl shadow-sm"
+  class="flex w-full justify-between items-center py-6 border-b-[1px] md:px-12 px-5 fixed top-0 z-[3000] filter backdrop-blur-xl shadow-sm"
 >
-  <div class="flex items-center">
-    <img src="/logo-512.png" alt="classroomio logo" class="w-10 h-10" />
-    <h1 class="text-xs md:text-lg font-medium ml-2">ClassroomIO</h1>
-  </div>
+  <a href="/">
+    <div class="flex items-center">
+      <img src="/logo-512.png" alt="classroomio logo" class="w-10 h-10" />
+      <h1 class="text-xs md:text-lg font-medium ml-2">ClassroomIO</h1>
+    </div>
+  </a>
 
   <nav class="w-[40%] hidden md:hidden lg:block">
     <ul class="flex items-center justify-between w-full gap-2">
@@ -134,11 +136,27 @@
         Sign Up
       </button>
     </a> -->
-    <a href="https://cal.com/digdippa/30min" target="_blank">
-      <button class="font-medium text-sm after:content-['→'] after:ml-2">
-        Book a Demo
-      </button>
+    <a href="/discord" target="_blank">
+      <img
+        alt="discord logo"
+        src="/discord-blue.png"
+        class="w-8 h-6 mr-4 cursor-pointer"
+      />
     </a>
+    <a href="/github" target="_blank">
+      <img
+        alt="github logo"
+        src="/github-mark.png"
+        class="w-6 h-6 mr-4 cursor-pointer"
+      />
+    </a>
+    <button
+      class="font-medium text-sm after:content-['→'] after:ml-2"
+      data-cal-config={"{'layout':'month_view'}"}
+      data-cal-link="classroomio/classroomio-demo"
+    >
+      Get a Demo
+    </button>
   </div>
 
   <button class="block md:block lg:hidden" on:click={handleShowNav}
@@ -153,7 +171,7 @@
       class="w-[60%] md:w-[40%] h-[100vh] border-2 sm:block lg:hidden px-3 pt-3 pb-2 md:p-7 absolute right-0 top-0 bg-white"
     >
       <div class="flex justify-between py-2 mb-5">
-        <img src="/logo-32.png" alt="classroomio logo" class="w-[8%]" />
+        <img src="/logo-512.png" alt="classroomio logo" class="w-[8%]" />
         <button on:click={handleShowNav}
           ><CloseLarge size={24} class="mr-5" /></button
         >
@@ -207,13 +225,37 @@
           class="text-black font-semibold rounded-md mr-10 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
           >Sign Up</button
         > -->
-        <a href="https://cal.com/digdippa/30min" target="_blank">
-          <button
-            class="font-semibold after:content-['→'] rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
-          >
-            Book a Demo
-          </button>
+        <a
+          href="/discord"
+          target="_blank"
+          class="flex items-center rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
+        >
+          <img
+            alt="discord logo"
+            src="/discord-blue.png"
+            class="w-8 h-6 mr-2 cursor-pointer"
+          />
+          <span>Discord</span>
         </a>
+        <a
+          href="/github"
+          target="_blank"
+          class="flex items-center rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
+        >
+          <img
+            alt="github logo"
+            src="/github-mark.png"
+            class="w-6 h-6 mr-3 cursor-pointer"
+          />
+          <span>Github</span>
+        </a>
+        <button
+          class="font-semibold after:content-['→'] rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
+          data-cal-config={"{'layout':'month_view'}"}
+          data-cal-link="classroomio/classroomio-demo"
+        >
+          Get a Demo
+        </button>
       </div>
     </div>
   {/if}
