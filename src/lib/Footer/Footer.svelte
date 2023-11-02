@@ -17,9 +17,9 @@
       <p
         class="text-sm lg:text-md tracking-wide leading-7 lg:leading-7 text-gray-600 inter"
       >
-        The LMS with Superpowers
+        The Open Source Platform for Tech Bootcamp
         <br />
-        Making teaching and learning seamless
+        Making teaching and learning seamless for tech bootcamps
       </p>
       <div class="flex items-center mt-5 lg:mt-10 gap-3 lg:gap-7">
         <a href="https://www.facebook.com/classroomiohq" target="_blank">
