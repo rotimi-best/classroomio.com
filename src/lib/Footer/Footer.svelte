@@ -17,7 +17,7 @@
       <p
         class="text-sm lg:text-md tracking-wide leading-7 lg:leading-7 text-gray-600 inter"
       >
-        The Open Source Platform for Tech Bootcamp
+        The Open Source Platform for Tech Bootcamps
         <br />
         Making teaching and learning seamless for tech bootcamps
       </p>
