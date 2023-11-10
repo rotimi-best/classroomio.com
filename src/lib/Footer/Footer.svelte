@@ -94,7 +94,7 @@
           <li
             class="text-sm lg:text-md tracking-wide leading-6 text-gray-600 hover:text-gray-900"
           >
-            <a target="_blank" href="https://help.classroomio.com/">
+            <a target="_blank" href="https://docs.classroomio.com/">
               Help center
             </a>
           </li>
@@ -103,7 +103,7 @@
           >
             <a
               target="_blank"
-              href="https://help.classroomio.com/what-is-classroomio"
+              href="https://docs.classroomio.com/what-is-classroomio"
             >
               What is ClassroomIO?
             </a>
@@ -113,7 +113,7 @@
           >
             <a
               target="_blank"
-              href="https://help.classroomio.com/getting-started"
+              href="https://docs.classroomio.com/getting-started"
             >
               Getting Started
             </a>
@@ -150,7 +150,7 @@
           >
             <a
               target="_blank"
-              href="https://help.classroomio.com/getting-started"
+              href="https://docs.classroomio.com/getting-started"
             >
               Getting Started
             </a>
