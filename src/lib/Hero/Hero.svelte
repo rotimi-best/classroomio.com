@@ -39,7 +39,7 @@
   <button
     class="font-medium lg:font-semibold text-sm md:text-md text-white px-6 py-3 lg:px-10 lg:py-5 bg-[#1D4EE2] rounded-md lg:rounded-xl mt-10"
     data-cal-config={"{'layout':'month_view'}"}
-    data-cal-link="classroomio/classroomio-demo"
+    data-cal-link="classroomio/demo"
   >
     Let's show you 😍️️️️️️
   </button>

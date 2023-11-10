@@ -22,7 +22,7 @@ export const faqs = [
   {
     question: 'What kind of team plans does ClassroomIO offer?',
     answer:
-      'ClassroomIO offers a Team plan designed to cater to organizations of any size. It allows up to 5 admin members and unlimited teachers to help you teach.',
+      'ClassroomIO offers a Team plan designed to cater to organizations of any size. Depending on the plan you select, you can invite other teachers into your organization.',
   },
   {
     question: 'Can I try ClassroomIO before I buy it?',
