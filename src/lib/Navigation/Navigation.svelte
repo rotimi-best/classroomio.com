@@ -129,13 +129,11 @@
   </nav>
 
   <div class="justify-between items-center flex-row hidden md:hidden lg:flex">
-    <!-- <a href="https://cal.com/digdippa/30min" target="_blank">
-      <button
-        class="bg-[#1D4EE2] text-white text-sm font-medium px-4 py-1.5 rounded-md mr-5"
-      >
-        Sign Up
-      </button>
-    </a> -->
+    <!-- <button
+      class="bg-[#1D4EE2] text-white text-sm font-medium px-4 py-1.5 rounded-md mr-5"
+    >
+      Sign Up
+    </button> -->
     <a href="/discord" target="_blank">
       <img
         alt="discord logo"
@@ -153,7 +151,7 @@
     <button
       class="font-medium text-sm after:content-['→'] after:ml-2"
       data-cal-config={"{'layout':'month_view'}"}
-      data-cal-link="classroomio/classroomio-demo"
+      data-cal-link="classroomio/demo"
     >
       Get a Demo
     </button>
@@ -252,7 +250,7 @@
         <button
           class="font-semibold after:content-['→'] rounded-md after:ml-2 w-full text-left py-4 px-4 hover:bg-gray-100 text-sm md:text-lg"
           data-cal-config={"{'layout':'month_view'}"}
-          data-cal-link="classroomio/classroomio-demo"
+          data-cal-link="classroomio/demo"
         >
           Get a Demo
         </button>
