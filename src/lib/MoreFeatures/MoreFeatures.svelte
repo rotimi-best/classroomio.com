@@ -72,7 +72,7 @@
           <button
             class="p-4 rounded-md {i === selected &&
               'selected'} mb-3 text-start min-w-[75vw] lg:min-w-[unset]"
-            on:click={() => {
+            on:mouseenter={() => {
               selected = i;
               clearInterval(interval);
             }}
