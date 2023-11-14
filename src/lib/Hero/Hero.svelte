@@ -4,13 +4,25 @@
 </script>
 
 <div class="text-center mt-[30%] md:mt-36 border-b-2 relative">
-  <div style="color: rgb(75, 85, 99);" class="mb-10">
-    <a
+  <div class="mb-10 flex items-center justify-center w-full">
+    <!-- <a
       target="_blank"
       rel="noopener noreferrer nofollow"
       href="https://github.com/rotimi-best/quizify"
+      style="color: rgb(75, 85, 99);"
       class="border border-gray-300 rounded-full px-4 py-1 text-sm font-medium hover:underline"
       >Give us a <span class="text-[#1D4EE2]">star</span> on github</a
+    > -->
+    <a
+      href="https://www.producthunt.com/posts/classroomio?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-classroomio"
+      target="_blank"
+      ><img
+        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=425236&theme=light"
+        alt="ClassroomIO - The&#0032;Open&#0032;Source&#0032;Platform&#0032;for&#0032;Tech&#0032;Bootcamps | Product Hunt"
+        style="width: 250px; height: 54px;"
+        width="250"
+        height="54"
+      /></a
     >
   </div>
   <h1
