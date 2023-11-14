@@ -8,5 +8,5 @@ export const load = ({ request }) => {
     event: 'discord page visited',
   });
 
-  throw redirect(301, 'https://discord.gg/9X6A4SzpJS');
+  throw redirect(301, 'https://discord.gg/NJqaZNuD');
 };
